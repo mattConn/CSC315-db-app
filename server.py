@@ -11,5 +11,14 @@ def index():
 
     return response
 
+@app.route("/viewseq")
+def viewSeq():
+
+    response = Response()
+    cursor.execute(f'select seq from Sequences where name=\'{request.args.get("name")}\';')
+    response.set_data(str([str(i) for i in cursor]))
+
+    return response
+
 if __name__ == '__main__':
     app.run()
