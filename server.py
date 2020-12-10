@@ -38,7 +38,7 @@ def addSeq():
     response.set_data(f'Added sequence {name}.') # write response with new sequence name
 
     # to make changes persist
-    # db.commit() 
+    # db.commit() (import db first)
 
     return response
 
