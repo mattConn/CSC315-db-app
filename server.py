@@ -5,9 +5,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
+    cursor.execute('select name from Sequences;')
 
     response = Response()
-    response.set_data('Welcome to the Integer Sequence Database.\r\n')
+    response.set_data(f'Welcome to the Integer Sequence Database.\r\n</br>Sequences: {str([*cursor])[1:-1]}')
 
     return response
 
