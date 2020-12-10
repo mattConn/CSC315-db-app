@@ -37,6 +37,9 @@ def addSeq():
     cursor.execute(f'insert into Sequences values({id},\'{name}\',\'{seq}\');')
     response.set_data(f'Added sequence {name}.') # write response with new sequence name
 
+    # to make changes persist
+    # db.commit() 
+
     return response
 
 if __name__ == '__main__':
