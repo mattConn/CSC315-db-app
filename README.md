@@ -8,13 +8,13 @@ Run intseq.sql to
 - add a few sequences
 - add an app user with insert and select permissions
 
-## DB connection
+## DB App interface
 Run main.py to
 - connect to intseq db
 - insert a new sequence
 - select a sequence
 
-# Socket communication (via Flask)
+# Socket communication (via Flask) (extra credit)
 Run server.py to
 - connect to intseq db and start listening on port 5000
 - root url will display all existing sequences by name
