@@ -1,3 +1,6 @@
+# connects to database for server.py
+# server.py imports cursor 
+
 import mysql.connector
 import sys
 
